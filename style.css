@@ -1,0 +1,218 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #eee236; /* Light background for header */
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column; /* Stack main menu and secondary menu vertically */
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Main Navigation Menu */
+.header-list {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Spacing between items */
+    padding: 0;
+    margin-bottom: 10px; /* Space below the main navigation */
+}
+
+.header-list li {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-list li a {
+     /* Remove underline */
+    color: #2836f3; /* Dark text color */
+    transition: color 0.3s;
+}
+
+.header-list li a:hover {
+    color: #be4107; /* Highlight color on hover */
+}
+
+/* Secondary Navigation Section */
+.secondary-nav {
+    display: flex;
+    justify-content: space-between; /* Space between BLOGS/FAQS and User Info */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Limit the width of the header content */
+}
+
+/* Secondary List (BLOGS, FAQS) */
+.secondary-list {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Align items horizontally */
+    gap: 10px; /* Spacing between items */
+    padding: 0;
+}
+
+.secondary-list li {
+    font-size: 12px;
+    color: #555;
+}
+
+/* User Information Section */
+.user-info {
+    list-style: none; /* Remove bullets */
+    display: flex; /* Align items horizontally */
+    gap: 10px; /* Spacing between items */
+    padding: 0;
+    align-items: center; /* Vertically align text and icons */
+}
+
+.user-info li {
+    font-size: 12px;
+    color: #333333;
+}
+
+.user-info i {
+    margin-right: 5px; /* Spacing between the icon and text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack all items vertically */
+        align-items: flex-start;
+    }
+
+    .header-list {
+        flex-wrap: wrap; /* Allow wrapping of main menu items */
+        justify-content: flex-start; /* Align to the left */
+        margin-bottom: 15px;
+    }
+
+    .secondary-nav {
+        flex-direction: column; /* Stack BLOGS and user info vertically */
+        align-items: flex-start;
+    }
+
+    .secondary-list {
+        margin-bottom: 10px; /* Add spacing below BLOGS */
+    }
+}
+
+.header-2 {
+    background-color: #fff; /* Optional: Background color */
+    padding: 10px 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+}
+
+.header-list-2 {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Makes list items horizontal */
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Even spacing between items */
+    gap: 5px; /* Spacing between list items */
+}
+
+.header-list-2 li {
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold;
+    color: #333; /* Text color */
+    
+}
+
+.header-list-2 li img {
+    height: 50px; /* Adjust the logo size */
+    width: auto;
+}
+
+.header-list-2 li i {
+    font-size: 18px; /* Icon size */
+    color: #007bff; /* Optional: Icon color */
+    cursor: pointer;
+}
+
+.header-list-2 li div {
+    background-color: #007bff; /* Background color for "abha icon" */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* General styling for the container */
+.header-3 {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly with space between */
+    align-items: center;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+    gap: 20px; /* Add spacing between items */
+    background-color: #1b5dd6; /* Light background */
+    padding: 10px; /* Add padding around the container */
+     /* Rounded corners */
+     /* Subtle shadow */
+}
+
+/* Individual header items */
+.header-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px; /* Fixed width for consistent layout */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add hover effects */
+}
+
+/* Image styling */
+.header-item img {
+    width: 60px; /* Icon size */
+    height: 60px; /* Keep it square */
+    margin-bottom: 10px; /* Space between icon and text */
+    object-fit: cover; /* Ensure image is cropped correctly */
+}
+
+/* Text styling */
+.header-item h3 {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Hover effect for header items */
+.header-item:hover {
+    transform: translateY(-5px); /* Move item slightly up */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header-3 {
+        justify-content: center; /* Center items on smaller screens */
+    }
+
+    .header-item {
+        width: 120px; /* Smaller item size */
+    }
+
+    .header-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-item h3 {
+        font-size: 14px; /* Adjust text size */
+    }
+}
+
+h3{
+    color: #fff;
+}
